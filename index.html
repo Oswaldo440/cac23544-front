@@ -1,87 +1,246 @@
-<!-- Mi primer Html -->
-<!--
-....Soy
-....un 
-....comertario de varias
-....lineas
--->
-<!-- estructura basica de un html(5)-->
 <!DOCTYPE html>
-<!--Etiqueta-->
-<!--lang es un atributo de html-->
-<html Lang="es">
-    <!-- no se ve-->
-    <head>
-            <title>CaC#23544-HTML </title>
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/Trabajo-Pract.-Integ.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    
+  <!-- Barra de Navegacion-->
 
-    <!-- ve el usuario--->
-    <body>
-            <!--mas etiquetas--->
-            <!--h1 es un etiqueta de titulo: principal-->
-            <h1> T&iacute;tulo principal de la p&aacute;gina </h1>
-            <h2> T&iacute;tulo 2 </h2>
-            <h3> T&iacute;tulo 3 </h3>
-            <h4> T&iacute;tulo 4 </h4>
-            <h5> T&iacute;tulo 5 </h5>
-            <h6> T&iacute;tulo 6 </h6> 
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top px-5">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"></a>
+              <img src="../Views/Imgs/codoacodo.png" width="120" height="75">
+                <h4 class="text-white">Conf Bs As</h4> 
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> 
+              <span class="navbar-toggler-icon"></span>
+            </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ms-auto pe-5">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">La conferencia</a>
+                    </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Los oradores</a>
+                      </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">EL lugar y la fecha</a>
+                        </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Conviértete en oradores</a>
+                          </li>
+                            <li class="nav-item">
+                              <a class="nav-link text text-p" href="#">Comprar tickets</a>
+                            </li>
+              </div>
+        </div>
+    </nav>
 
-            <!--soy un parrafo-->
-            <p> Soy un parrafo 1 </p>
-            <p> Soy un parrafo 2 </p>
-            
-            <!--links-->
-            <a href="https://www.google.com.ar" target="_blank"> Ir a Google -</a> 
-            <br>
-            <a href="https://www.twitter.com"> Ir a Twitter -</a>
-            <br>
-            <a href="https://www.facebook.com"> Ir a Facebook -</a>
+      <!-- Carousel-->
 
-            <!--linea horizontal-->>
-            <hr>
-            <!--imagen-->
-            <img src="https://www.pixartprinting.it/blog/wp-content/uploads/2021/06/1_Mona_Lisa_300ppi.jpg"
-                width="20%"
-            >
-            <img src="https://www.pixartprinting.it/blog/wp-content/uploads/2021/06/1_Mona_Lisa_300ppi.jpg"
-                width="15%"
-            >    
-            <!--ETIQUETAS COMUNES DE TEXTO-->
-            <p> 
-                <b>Lorem</b>, <i>ipsum</i> <mark>dolor</mark> <sup>sit</sup> <sub>amet</sub> <del>consectetur</del> <u>adipisicing</u> <em>elit</em>. <strong>Magnam</strong>, non! ,
-               
-            </p>    
-            <!--Listas-->
-            <!--desordenadas-->
-            <h3> Ingrediente de Pizza  </h3>
-            <ul>
-                <li>
-                    Queso           
-                </li> 
-                <li>
-                    Harina           
-                </li>
-                <li>
-                    Mozarrella    
-                </li>       
-            </ul>
+    <div id="hero-carousel" class="carousel slide">
+        <div class="carousel-inner">
+                <div class="carousel-item active c-item">
+                  <img src="./Imgs/ba1.jpg" class="d-block w-100 c-img" alt="Slide 1">
+                    <div class="carousel-caption text-end w-50 h-50">
+                      <h2 class="text text-white">Conf Bs As</h2>
+                          <p class="text-white mb-1">Bs As llega por primera vez a Argentina. Un evento para compartir con</p> 
+                                <p class="text-white mb-1">nuestra comunidad el conocimiento y experiencia de los expertos que</p>
+                                  <p class="text-white mb-1">están creando el futuro de Internet. Ven a conocer a miembros del</p>
+                                  <p class="text-white mb-1">evento, a otros estudiantes de Codo a Codo y los oradores de primer</p>
+                                  <p class="text-white mb-3">nivel que tenemos para ti. Te esperamos!</p>
+                                  <button class="btn btn-transparent active text-white mb-3">Quiero ser orador </button>
+                                  <button class="btn btn-p mb-3 text-white">Comprar tickets</button>
+                    </div>
+                </div>
+          <div class="carousel-item c-item">
+              <img src="./Imgs/ba2.jpg" class="d-block w-100 c-img" alt="Slide 2">
+                <div class="carousel-caption text-end w-50 h-50">
+                    <h2 class="text text-white">Conf Bs As</h2>
+                        <p class="text-white mb-1">Bs As llega por primera vez a Argentina. Un evento para compartir con</p> 
+                          <p class="text-white mb-1">nuestra comunidad el conocimiento y experiencia de los expertos que</p>
+                          <p class="text-white mb-1">están creando el futuro de Internet. Ven a conocer a miembros del</p>
+                          <p class="text-white mb-1">evento, a otros estudiantes de Codo a Codo y los oradores de primer</p>
+                          <p class="text-white mb-3">nivel que tenemos para ti. Te esperamos!</p>
+                          <button class="btn btn-transparent active text-white mb-3">Quiero ser orador </button>
+                          <button class="btn btn-p mb-3 text-white">Comprar tickets</button>
+                </div>
+          </div>
+              <div class="carousel-item c-item">
+                  <img src="./Imgs/ba3.jpg" class="d-block w-100 c-img" alt="Slide 3">
+                    <div class="carousel-caption text-end w-50 h-50">
+                        <h2 class="text text-white">Conf Bs As</h2>
+                          <p class="text-white mb-1">Bs As llega por primera vez a Argentina. Un evento para compartir con</p> 
+                            <p class="text-white mb-1">nuestra comunidad el conocimiento y experiencia de los expertos que</p>
+                            <p class="text-white mb-1">están creando el futuro de Internet. Ven a conocer a miembros del</p>
+                            <p class="text-white mb-1">evento, a otros estudiantes de Codo a Codo y los oradores de primer</p>
+                            <p class="text-white mb-3">nivel que tenemos para ti. Te esperamos!</p>
+                            <button class="btn btn-transparent active text-white mb-3">Quiero ser orador </button>
+                            <button class="btn btn-p mb-3 text-white">Comprar tickets</button>
+                    </div>
+              </div>
+        </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+    </div>
 
-            <!--Lista Ordenan-->
-            <h3>Paso de preparacion </h3>
-            <ol>
-                <li>
-                    Paso    
-                </li>
-                <li>
-                    Paso   
-                </li>
-                <li>
-                    Paso  
-                </li>    
-            </ol>
-            <button>
-                    Hola Mundo
-            </button>    
-    </body>
+    <!-- Tarjetas de Oradores-->
 
+  <section id="tarjetas" class="pt-md-2">
+        <h6 class="text-center my-1"> CONOCE A LOS</h6>
+        <h1 class="text-center my-3"> ORADORES </h1>
+    
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                  <div class="card">
+                    <img src="./Imgs/steve.jpg" alt="imagen-Steve" class="card-img-top">
+                    <div class="card-body">
+                        <span class="badge bg-warning text-wrap text-dark"><b> JavaScript </b></span>
+                        <span class="badge bg-info">React</span>
+                        <h5 class="card-titulo"> Steve Jobs</h5>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa exercitationem delectus recusandae expedita perspiciatis eligendi debitis, praesentium, aperiam repellendus, esse soluta animi amet excepturi necessitatibus libero ea provident velit eius? </p>
+                    </div>   
+                  </div>
+                </div>
+                  <div class="col-md-4">
+                    <div class="card">
+                      <img src="./Imgs/bill.jpg" alt="imagen-Bill" class="card-img-top">
+                      <div class="card-body">
+                        <span class="badge bg-warning text-wrap text-dark"><b> JavaScript </b></span>
+                        <span class="badge bg-info">React</span>
+                        <h5 class="card-titulo"> Bill Gates</h5>
+                          <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa exercitationem delectus recusandae expedita perspiciatis eligendi debitis, praesentium, aperiam repellendus, esse soluta animi amet excepturi necessitatibus libero ea provident velit eius? </p>
+                      </div>   
+                    </div>  
+                  </div>
+                    <div class="col-md-4">
+                      <div class="card">
+                        <img src="./Imgs/ada.jpeg" alt="imagen-Ada" class="card-img-top">
+                        <div class="card-body">
+                            <span class="badge bg-secondary">Negocios</span>
+                            <span class="badge bg-danger">Startups</span>  
+                            <h5 class="card-titulo"> Ada Lovelace</h5>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa exercitationem delectus recusandae expedita perspiciatis eligendi debitis, praesentium, aperiam repellendus, esse soluta animi amet excepturi necessitatibus libero ea provident velit eius? </p>
+                        </div>   
+                      </div>
+                    </div>
+            </div>         
+        </div>     
+  </section>
+    
+<!-- Tarjetas en grupo -->
+
+    <div class="row pt-md-5">
+        <div class="col-md">
+          <div class="card-group">
+            <div class="card">
+              <img src="./Imgs/honolulu.jpg" alt="playa" class="d-block w-100 h-100">
+            </div>
+              <div class="col-md">
+                <div class="card text h-100">
+                  <div class="card-body-gruop">
+                    <h3 class="card-title pt-md-3 mx-3">Bs As - Octubre</h3>
+                      <p class="lh-base mx-3">Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. Honolulu es la
+                                        más sureña de entre las principales ciudades estadounideses. Aunque el hombre de Honolulu se reiere al área
+                                        urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-
+                                        condado consolidada que cubre toda la ciudad(aproximadamente 600 Km<sup>2</sup> de supericie).</p>
+                          <button class="btn btn-transparent active mb-3 mx-3">Conocé más</button>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+    </div>
+    
+    <!--formularios -->
+    
+    <section id="tarjetas" class="pt-md-4"></section>
+        <h5 class="text-center my-2"> CONVIÉRTE EN UN</h5>
+          <h1 class="text-center my-3"><b> ORADOR </b></h1>
+            <p class="text-center">Anótate como orador para dar una <abbr title="charla ignite">charla ignite</abbr>. Cuéntanos de qué quieres hablar!</p>
+    
+          <div class="container d-flex justify-content-center">
+            <form>  
+              <div class="row">
+                <div class="col-sm-12 col-md-6 ">
+                  <div class="mb-3">
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
+                  </div>
+                </div>  
+                    <div class="col-sm-12 col-md-6">
+                      <div class="mb-3">
+                        <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="Apellido">
+                      </div>
+                    </div> 
+                      <div class="mb-0">
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="4">Sobre qué quieres hablar?</textarea>
+                        <p>Recuerden incluir un titulo para la charla</p> 
+                      </div>
+                        <div class="btn d-grid">
+                          <button class="boton">Enviar</button>
+                        </div>
+              </div>
+            </form>
+          </div>
+
+   <!-- Footer -->
+   
+    <div class="container-fluid mb-0">
+        <footer class="footer text-white">
+            <section class="mt-2 mx-5 mb-3">
+                  <div class="row pb-4 pt-4 text-center">
+                    <div class="col-sm-1-between col-md-4 col-lg">
+                        <h6 class="text">
+                          <a href="#!" class="text-white text-decoration-none">Preguntas frecuentes</a>
+                        </h6>
+                    </div>
+                        <div class="col-sm-1-between col-md-4 col-lg">
+                          <h6 class="text">
+                            <a href="#!" class="text-white text-decoration-none">Contáctanos</a>
+                          </h6>
+                        </div>
+                          <div class="col-sm-1-between col-md-4 col-lg">
+                            <h6 class="text">
+                              <a href="#!" class="text-white text-decoration-none">Prensa</a>
+                            </h6>
+                          </div>
+                            <div class="col-sm-1-between col-md-4 col-lg">
+                              <h6 class="text">
+                                <a href="#!" class="text-white text-decoration-none">Conferencia</a>
+                              </h6>
+                            </div>
+                              <div class="col-sm-1-between col-md-4 col-lg">
+                                <h6 class="text">
+                                  <a href="#!" class="text-white text-decoration-none">Término y Condiciones </a>
+                                </h6>
+                              </div>
+                                  <div class="col-sm-1-between col-md-4 col-lg">
+                                    <h6 class="text">
+                                      <a href="#!" class="text-white text-decoration-none">Privacidad</a>
+                                    </h6>
+                                  </div>
+                                      <div class="col-sm-1-between col-md-4 col-lg">
+                                        <h6 class="text">
+                                          <a href="#!" class="text-white text-decoration-none">Estudiante</a>
+                                        </h6>
+                                      </div>
+                  </div>
+            </section>
+        </footer>
+    </div>    
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
 </html>
