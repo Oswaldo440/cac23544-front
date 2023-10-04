@@ -1,0 +1,21 @@
+/*es css definimos reglas!!!!!!!!!*/
+/*selector por id: para un solo elemento*/
+#eq {
+    color:red;
+}
+/*para todos los h3*/
+h3 {
+    color:blue;
+    /*cambiar el tamaño de la letra*/
+    font-size: 30px ;
+}
+/*ESPECIFICIDAD*/
+/*
+    selector por id > selector de etiqueta
+    id > etiqueta
+*/
+
+/*selector de clase: a quien elija*/
+.textoVerde {
+    color: rgb(209, 14, 183);
+}

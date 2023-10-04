@@ -1,0 +1,70 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+* {
+     outline: 1px solid red;
+}
+
+:root {
+    --primary-text-color: #00528C;
+    --primary-text-color-complement: #3E9ADB;
+
+    font-family: 'Ubuntu';
+}
+
+.mainHeader {
+    display: inline-block;
+    /* margin: 0 auto; */
+    /* background: goldenrod; */
+}
+
+.mainHeader_img {
+    width: 20vw;
+    border-radius: 50%;
+    height: 10vw;
+    
+}
+
+.mainHeader_title {
+    display: inline-block;
+    text-transform: uppercase; 
+}
+.mainCV {
+    display: inline-block;
+    /* border: 1px solid black; */
+    width: 100vw;
+    /* margin: 0 auto; */
+}
+.mainCV_informacion_left {
+    height: 80vh;
+    display: inline-block;
+    background-color: red;
+    width: 40vw;
+}
+.mainCV_informacion_right {
+    height: 80vh;
+    display: inline-block;
+    background-color: green;
+    width: 45vw;
+}
+
+.mainCV_informacion_title {
+    color: var(--primary-text-color);    
+    text-transform: capitalize;
+    font-size: 1.8em;
+}
+.mainCV_informacion_item {
+    list-style: none;
+    font-size: 1.2em;
+    color: var(--primary-text-color-complement);
+}
+.mainCV_informacion_item span{
+    font-weight: 300;
+}
+
+.mainCV_footer {
+    height: 10vh;
+    /* background: #D98811; */
+    text-align: center;
+    line-height: 2em;
+}

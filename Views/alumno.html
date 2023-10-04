@@ -1,0 +1,172 @@
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumno - Form</title>
+</head>
+<body>
+    <h1>Datos de Alumno</h1>
+    <fieldset>
+        <legend>Datos de Alumno</legend>
+        <form method="post">
+            <label for="nombre">Nombre</label>
+            <input type="text" 
+                id="nombre"
+                name="nombre"
+                required>
+            <br>
+            <label for="apellido">Apellido</label>
+            <input type="text" 
+                id="apellido"
+                name="apellido"
+                required>
+            <br>
+            <label for="dni">DNI</label>
+            <input type="text" 
+                id="dni" 
+                maxlength="10"
+                name="dni"
+                required>
+            <br>
+            <label for="email">Email</label>
+            <input type="email" 
+                id="email"
+                name="email"
+                required>
+            <!--combo-->
+            <br>
+            <label for="curso">Curso:</label>
+            <select id="curso" name="curso" required>
+                <option>PHP</option>
+                <option selected>Javscript</option>
+                <option>Pythom</option>
+            </select>
+            <br>
+            <!--radios-->
+            <label>Turno:</label>
+            <br>        
+            <label for="manana">Mañana</label>
+            <input type="radio" 
+                id="manana" 
+                name="turno"
+                value="manana"
+                required>
+    
+            <label for="tarde">Tarde</label>
+            <input type="radio" 
+                id="tarde"
+                name="turno"
+                value="tarde"
+                required>
+    
+            <label for="noche">Noche</label>
+            <input type="radio"
+                id="noche"
+                name="turno"
+                value="noche"
+                required>
+            <hr>
+            <button type="submit">
+                Grabar
+            </button>
+        </form>
+    </fieldset>
+    <a href="tablas.html">Volver</a>
+</body>
+</html>
+
+<br>
+<label> <h4> Estaciones </h4> </label>
+
+<input type="radio" name="estacion" value="1">Primavera
+
+<br>
+
+<input type="radio" name="estacion" value="2">Verano
+
+<br>
+
+<input type="radio" name="estacion" value="3">Otoño
+
+<br>
+
+<input type="radio" name="estacion" value="4">Invierno
+
+<br>
+<input type="checkbox" name="jamon">Me gusta el jamón.
+
+<hr>
+<form action="mailto:juan@gmail.com" method="post" enctype="text/plain">
+
+    Nombre <input type="text" name="nombre" size="30" maxlength="100">
+    
+    <br>
+    
+    Email <input type="text" name="email" size="25" maxlength="100" value="@">
+    
+    <br>
+    
+    Población <input type="text" name="poblacion" size="20" maxlength="60">
+    
+    <br>
+    
+    Sexo
+    
+    <br>
+    
+    <input type="radio" name="sexo" value="Varon" checked> Hombre
+    
+    <br>
+    
+    <input type="radio" name="sexo" value="Hembra"> Mujer
+    
+    <br>
+    
+    <br>
+    
+    Frecuencia de los viajes
+    
+    <br>
+    
+    <select name="utilizacion">
+    
+    <option value="1">Varias veces al dia
+    
+    <option value="2">Una vez al dia
+    
+    <option value="3">Varias veces a la semana
+    
+    <option value="4">varias veces al mes
+    
+    </select>
+    
+    <br>
+    
+    <br>
+    
+    Comentarios sobre su satisfacción personal
+    
+    <br>
+    
+    <textarea cols="30" rows="7" name="comentarios"></textarea>
+    
+    <br>
+    
+    <br>
+    
+    <input type="checkbox" name="recibir_info" checked> Deseo recibir notificación de las novedades en las líneas de autobuses.
+    
+    <br>
+    
+    <br>
+    
+    <input type="submit" value="Enviar formulario">
+    
+    <br>
+    
+    <br>
+    
+    <input type="Reset" value="Borrar todo">
+    
+    </form>

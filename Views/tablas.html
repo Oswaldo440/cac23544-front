@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - Clase2</title>
+</head>
+<body>
+    <h1> Lista de Alumnos </h1>  
+    <table border="1" width="100%">
+        <!--thead: titulos de la tabla -->
+        <thead>
+            <tr><!--fila-->
+                <th><!--titulo de columna-->
+                    Nombre
+                </th>
+                <th>
+                    Apellido
+                </th>
+                <th>
+                    DNI
+                </th>
+                <th>
+                    Email
+                </th>
+                <th>
+                    Curso
+                </th>
+                <th> Imagen </th>
+            </tr>
+        </thead>
+        <!---datos:tbody-->
+        <tbody>
+            <tr><!--fila1-->
+                <td> Carlos </td>
+                <td> Vzlano </td>
+                <td> 
+                    <a href="alumno.html"> 123456  </a> 
+                </td>
+                <td> carlos.vzla@gamil.com </td>
+                <td> PHP </td>
+                <td width="10%">
+                    <img src="https://www.pixartprinting.it/blog/wp-content/uploads/2021/06/1_Mona_Lisa_300ppi.jpg"
+                width="100%">
+                </td>
+            </tr>
+            <tr><!--fila2-->
+                <td> Carla  </td>
+                <td> colomb  </td>
+                <td> 
+                    <a href="alumno.html" > 234567  </a> 
+                  </td>
+                <td> Carla.colomb@gmail.com </td>
+                <td> Pythom </td>
+            </tr>
+            <tr align="center"><!--fila3-->
+                <td> Luis </td>
+                <td> Uruy </td>
+                <td>
+                    <a href="alumno.html" > 345678 </a>
+
+                </td>
+                <td> Luis.uruy@gmail.com</td>
+                <td> Javascript </td>
+            </tr>
+        </tbody>
+        <!--resumen: tfoot-->
+        <tfoot>
+            <tr>
+            <td colspan="2">
+                    
+                </td>
+            
+                <td colspan="2">
+                    Total: 3
+                </td>
+                <td></td>
+            </tr>     
+                      
+        </tfoot>
+    </table> 
+
+
+</body>
+</html>

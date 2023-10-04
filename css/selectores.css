@@ -1,0 +1,62 @@
+/*
+selectores
+etiqueta|clase|id|*|root
+
+style > id > clase > etiqueta 
+!important
+*/
+
+/*selector descendiente*/
+div p {
+    color:green;
+}
+
+/*selector hijo*/
+p > strong {
+    color:orange;
+}
+
+/*selector hermano adyacente*/
+h1 + p {
+    color: blue;
+}
+
+/*selector hermanos generales*/
+h2 ~ p {
+    color: red;
+}
+
+
+.link {
+    color: black;
+    font-size: 2.5em;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+/*selector por atributo*/
+/*igual = */
+a[title='google'] {
+    color:blue;
+}
+/*contenga *= */
+a[href*='face'] {
+    color:pink;
+}
+/*comience con */
+a[href^='https'] {/*alt+94*/
+    color: blueviolet;
+}
+/*termine con*/
+a[href$='er.com'] {
+    color:yellow;
+    background-color: black;
+}
+a[class~='primary'] {
+    color:black;
+    background-color: yellow;
+}
+a[atrx='bla'] {
+    color: white;
+    background-color: black;
+}

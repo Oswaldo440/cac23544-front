@@ -1,0 +1,24 @@
+:root {
+    /*puedo crear variables*/   
+    /*--nombre_de_la_variable: valor;*/
+    /*colores*/
+    --primary-color: rgb(79, 208, 247);
+    --secondary-color: rgb(18, 13, 56);
+    --success: green;
+    --danger: rgb(255, 170, 0);
+    --error: red;
+    --info: rgb(44, 114, 234);
+
+    /*fuentes*/
+
+    /*fondos*/
+
+    /*bla */@import url(./variables.css);
+
+.link {
+    color: var(--primary-color);    
+}
+.navbar{
+    border: 1px solid black;
+}
+

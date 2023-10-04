@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+}
+
+.divContainer {
+    background: #1A6FA1;
+    /* color:white; */
+    font-size: 20px;
+    /*margin-top: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    */
+    /*margin: 5px 5px 5px 5px ;*/
+    width: 400px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.divItem {
+    text-align: center;
+    width: 100px;
+    background:#EDEA4A;
+    padding: 5px;
+    /* border: 1px solid red; */
+    /* border-style:solid ; */
+    /* border-width: 1px; */
+    /* border-color: red;  */
+    box-sizing: border-box;/*border-box*/
+    margin: 2px;
+    /*border-box= width - padding - border*/
+    display: inline-block;
+    text-align: center;
+}
+
+.caja1 {
+    /* width: 33%; */
+    background: green;
+}
+
+.caja2 {
+    /* width: 32%; */
+    background: burlywood;
+}
+.caja3 {
+    /* width: 32%; */
+    background: yellow;
+    padding-left: 10;
+}
+
+/*pseudoclases*/
+/*.textos p:first-child {
+    color: red;
+}
+.textos p:last-child {
+    color:green;
+}
+.textos p:nth-child(3) {
+    color:blue;
+}*/
+/*nth-child(indice)*/
+/*
+.textos p:nth-child(3n + 1) {
+    color:blue;
+}
+*/
+
+/*pintar los pares*/
+.textos p:nth-child(even) {
+    color: red;
+}
+/*pintamos los impares*/
+.textos p:nth-child(odd) {
+    color: blue;
+}
+
+a:link {
+    text-transform: lowercase;
+    text-decoration: none;
+    color:blue;
+    cursor: pointer;
+}
+a:active {
+    color: #1A6FA1;
+}
+a:visited {
+    color:aqua
+}
+a:hover {
+    font-size: 1.1em;
+    color:#1A6FA1
+}
+
+/**/
+.micv {
+    width: 10%;
+}
+.micv:hover {
+    border-radius: 50%;
+}
+
+/*pseudoelementos*/
+.parrafo {
+    color: #1A6FA1;
+}
+
+.parrafo::first-letter {
+    font-size: 2em;    
+}
+.parrafo::before {
+    content: "/*"
+}
+.parrafo::after {
+    content: "*/"
+}
+.parrafo::selection {
+    color:#9e9b09
+}
+.parrafo::first-line {
+    font-weight: bold;
+}

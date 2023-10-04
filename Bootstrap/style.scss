@@ -1,0 +1,14 @@
+// Required
+@import "./node_modules/bootstrap/scss/functions";
+@import "./node_modules/bootstrap/scss/variables";
+@import "./node_modules/bootstrap/scss/mixins";
+
+// Create your own map
+$custom-colors: (
+  "custom-color": rgb(216, 20, 183)
+);
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+
+@import "./node_modules/bootstrap/scss/bootstrap.scss";

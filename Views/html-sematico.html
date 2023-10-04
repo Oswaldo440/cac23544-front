@@ -1,0 +1,82 @@
+<html lang="en">
+<!--lo ve el browser-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Sem&aacute;ntico</title>    
+    <!--2nda forma-->
+    <style>
+        /*comentario*/
+        /*modifica el html*/
+        /*primer regla para la etiqueta <a>*/
+        
+        /*selector de etiqueta*/
+        a {
+          color:green;  
+        }
+    </style>
+    <!--3er forma de agregar estilos: externa-->
+    <link rel="stylesheet" href="./css/style.css"/>    
+</head>
+
+<body>
+    <!--header-->
+    <!--1er forma-->
+    <header style="border: 1px solid black;text-align: center;">
+        <h1 style="color:red;">Partidos de primera</h1>
+    </header>
+    <!--barra de navegacion-->
+    <nav>
+        <ul>
+            <li>
+                <a href="./index.html">Home</a>
+            </li>
+            <li>
+                <a href="./tablas.html">Tablas</a>
+            </li>
+            <li>
+                <a href="./alumno.html">Link3</a>
+            </li>
+        </ul>
+    </nav>
+    
+    <!---contenido principal-->
+    <main>
+        <section>
+            <h3 id= "eq" >Equipos</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione nihil tempora sequi quae consectetur aperiam voluptates eum assumenda quam libero error dolor at laudantium beatae, veniam necessitatibus ut deleniti ipsa?</p>
+        </section>
+    </main>
+    <!--publicidad-->
+    <aside>
+        <h3>Venta de autos</h3>
+        <img src="./">
+    </aside>
+    <!--informacion independiente. Ej: mensaje de foro-->
+    <article>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+    </article>
+    <!--cierre, pie de pagina-->
+    <hr>
+    <footer>
+        <h5 class="textoVerde">Contacto</h5>
+        <form action="contacto.html">
+            <label>Mensaje</label>
+            <textarea>
+
+            </textarea>
+            <button type="submit">
+                Enviar
+            </button>
+        </form>
+        <h5>Mapa de sitio</h5>
+        <ul>
+            <li>
+                Home
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>
