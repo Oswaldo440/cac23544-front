@@ -12,7 +12,7 @@ function captura() {
     let Categoria = document.getElementById('valor2Categoria').value;
     let Expresion = /\w+@\w+\.+[a-z]{2,10}/;
     let ExpNomb = /\D+[aZ-Za]/;
-    let ExpApe = /\D+[aZ-Za]/;
+    let ExpApe = /\D/;
     let ExpCant = /^[0-9]{1,1}$/
     
 
@@ -34,7 +34,7 @@ function captura() {
             return false;
         }
         else if(!ExpApe.test(Apellido)){
-            alert("Formato Inválido");
+            alert("Formato de apellido Inválido");
             document.getElementById("InputApe").focus();
             InputApe="";
             return false;
