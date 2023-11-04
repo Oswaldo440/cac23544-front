@@ -29,11 +29,11 @@
 }
 
 .boxes {
-    height: 45px;
+    height: 50px;
     margin-top: 1px;
     border-radius: .3rem;
     background-color: #CCE5FF !important;
-    padding-top: 7px;  
+    padding-top: 8px;  
 
 }
 /* Pie de pagina */
