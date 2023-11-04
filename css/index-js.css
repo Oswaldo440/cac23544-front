@@ -1,0 +1,47 @@
+ * { 
+    padding : 0px;
+    margin : 0px;
+}
+
+.body {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+    }
+
+/* Barra de Navegacion */
+.navbar {
+    background-color: #343A40;
+}
+/* Color de Letra "comprar ticket" */
+.text-p {
+    color:#94CC3C !important;
+}
+/* Color de Boton */
+.btn-p {
+    background: #97C93E !important; 
+}
+
+.text-c {
+    background-color: #CCE5FF !important;
+}
+
+.boxes {
+    height: 40px;
+    margin-top: px;
+    border-radius: .3rem;
+    background-color: #CCE5FF !important;
+    padding-top: 7px;  
+
+}
+/* Pie de pagina */
+.footer {
+    background-color: #254151;  
+    padding: 0 17%;
+    margin-top: 50px;
+      
+ 
+}
+

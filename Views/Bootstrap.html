@@ -5,16 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    </head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    
+</head>    
 <body>
-      <div class="container-md  bg-primary">
+      <div class="container-fluid mt-3 ">
             <div class="row">
-                <div class="col bg_info">    
-                col 1    
+                <div class="col-sm-12 col-md-5 py-2">    
+                    <button
+                    type="submit"
+                    class="btn btn-primary"
+                    onclick="alert('hola mundo Js')"
+                    >
+                     Alert 
+                    </button>
+                    <button
+                    type="submit"
+                    class="btn btn-info"
+                    onclick="prompt('Ingrese nombre','valor por defecto')"
+                    >
+                      Prompt
+                    </button>
+                    <button
+                    type="submit"
+                    class="btn btn-warning"
+                    onclick="confirm('¿estas seguro?')" 
+                    >
+                     Confirm
+                    </button>
+                    <button
+                    type="submit"
+                    class="btn btn-success"
+                    onclick="console.log('Mesaje enviado a la consola')"
+                    >
+                      Consola
+                    </button>
+                
                 </div>
-                <div class="col bg-warning">
-                col 2    
-                </div>
-      </div>   
+            </div>
+        </div> 
+        <script>
+            let miPrimerVariable = 17;
+            console.log(typeof miPrimerVariable, miPrimerVariable); 
+            miPrimerVariable = 'Oswaldo'
+            console.log(typeof miPrimerVariable, miPrimerVariable); 
+            
+            miPrimerVariable = prompt('Ingrese su nombre');
+            console.log(miPrimerVariable);
+        </script>
+        <script>    
+            let a = prompt('Ingrese a');
+            let b = prompt('Ingrese b');
+            let c = Number(a) + Number(b);
+            alert(c); 
+        </script>  
+
+        <script>    
+            let salir = confirm('¿Desea salir?');
+            if (salir) {
+                alert('Chau!')
+            }else{
+                console.log('seguimos!');
+            }
+        </script>
+
 </body>
 </html>
