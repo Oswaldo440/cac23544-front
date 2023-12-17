@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/Trabajo-Pract.-Integ.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top px-5">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"></a>
+          <img src="../Imgs/codoacodo.png" width="120" height="75">
+            <h4 class="text-white">Conf Bs As</h4> 
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> 
+          <span class="navbar-toggler-icon"></span>
+        </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto pe-5">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../Views/Trabajo-Pract.-Integ.html">La conferencia</a>
+                </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Los oradores</a>
+                  </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../Views/Trabajo-Pract.-Integ.html">EL lugar y la fecha</a>
+                    </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../Views/Trabajo-Pract.-Integ.html#Conv-orador">Conviértete en oradores</a>
+                      </li>
+                        <li class="nav-item">
+                          <a class="nav-link text text-p" href="../index.html">Comprar tickets</a>
+                        </li>
+          </div>
+    </div>
+</nav>
+
+
+     <div class="container">
+       
+          <h5 class="text-center my-5"> CONVIÉRTE EN UN</h5>
+          <h1 class="text-center my-5"><b><u> <i> Listado de Oradores </i></u></b></h1>
+           <!--  <p class="text-center">Anótate como orador para dar una <abbr title="charla ignite">charla ignite</abbr>. Cuéntanos de qué quieres hablar!</p>
+    </div>
+  </div>
+
+          <div class="container d-flex justify-content-center">
+            <form>  
+              <div class="row">
+                <div class="col-sm-12 col-md-6 ">
+                  <div class="mb-3">
+                    <input name="nombre" class="form-control" id="nombre" placeholder="Nombre">
+                  </div>
+                </div>  
+                    <div class="col-sm-12 col-md-6">
+                      <div class="mb-3">
+                        <input name="apellido" class="form-control" id="apellido" placeholder="Apellido">
+                      </div>
+                    </div> 
+                    <div class="col-sm-12 col-md-6 ">
+                        <div class="mb-3">
+                          <input name="tema" class="form-control" id="tema" placeholder="Tema">
+                        </div>
+                      </div>  
+                          <div class="col-sm-12 col-md-6">
+                            <div class="mb-3">
+                              <input name="email" class="form-control" id="email" placeholder="Email">
+                            </div>
+                          </div> 
+                      <div class="mb-4">
+                          <textarea name="area" class="form-control" id="area" rows="4" placeholder="Si quieres comentar o preguntar algo?"></textarea>  
+                      </div>
+                        <div class="d-grid">
+                          <button type="button" id="btnCrear" class="btn btn-outline-info">Enviar</button>
+                        </div>
+              </div>
+            </form>
+          </div>
+    </form> -->
+
+    <div class="container">
+      <div class="row">
+          <div class="col-12 mt-2">
+              <button class="btn btn-warning" id="btnGetUsers">
+                  <b>< -- Listar -- ></b>
+              </button>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-12 mt-1" id="msj">
+
+          </div>
+          <div class="col-12">
+              <div id="users">
+                  <table class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col">ID</th>
+                          <th scope="col">Nombre</th>
+                          <th scope="col">Apellido</th>
+                          <th scope="col">Tema</th>
+                          <th scope="col">Email</th>
+                          <th scope="col">Coment</th>
+                        </tr>
+                      </thead>
+                      <tbody id="usersRows">                          
+                      </tbody>
+                    </table>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Orador</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <label><b>Nombre</b></label>
+              <input id="nombreActualizar" class="form-control mb-2">
+              <label><b>Apellido</b></label>
+              <input id="apellidoActualizar" class="form-control mb-2">
+              <label><b>Tema</b></label> 
+              <input id="temaActualizar" class="form-control mb-2">
+              <label><b>Correo</b></label>
+              <input id="emailActualizar" class="form-control mb-2">
+              <label><b>Comentario</b></label>
+              <input id="comentActualizar" class="form-control mb-2">
+          </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="btnCerrarModal">Cancelar</button>
+              <button type="button" class="btn btn-success"onclick="actualizarOrador()">Actualizar</button>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+            crearOperador = ()  => {
+            const orador = {
+              nombre: document.getElementById("nombre").value,
+              apellido: document.getElementById("apellido").value,
+              tema: document.getElementById("tema").value,
+              email: document.getElementById("email").value,
+              coment: document.getElementById("coment").value,
+            };  
+
+            //debo enviar los datos al servidor 
+            //fetch();con Post
+            fetch(`http://localhost:8080/web-app-23544/api/orador`, {
+              method: "POST", 
+              body: JSON.stringify(orador),
+              
+          })
+            .then(response => response.json()) 
+            .then(json => {
+                alert(`Alta de orador id:[${json.id}] ok`);      
+            })
+            .catch(err => console.log(err));
+
+      }
+      document.getElementById("btnCrear").addEventListener('click',crearOperador);
+    </script> 
+
+    <script>
+    
+     function listarOradores() {/*f2*/
+      //1 preparar
+      const respuesta = fetch(`http://localhost:8080/web-app-23544/api/orador`);
+
+      //2 invocar
+        respuesta
+          .then(response => response.json())
+          .then(data => procesarListado(data))//fulfilled
+          .catch(error => dibujarError(error))//rejected
+        }
+        const getOradoresFromLocal = () => {
+              const oradores = localStorage.getItem('oradores');
+              if(oradores); {
+                return JSON.parse(oradores);
+            }
+            return[];
+          }
+          const getOradorSeleccionado = () => {
+          const obj = localStorage.getItem('oradorBuscado')
+          if(obj) {
+              return JSON.parse(obj);
+          }
+          return null; 
+          
+          }
+          const removeOradorSeleccionado = () => {
+            localStorage.removeItem('oradorBuscado');
+          }
+
+          const saveOradoresInFromLocal = (key, data) => {
+          localStorage.setItem(key, JSON.stringify(data));//como texto
+        }
+          const editar = (id) => {
+          const oradores = getOradoresFromLocal();//[]
+          const oradorBuscado = oradores.find(o => o.id === id);
+          
+          //si quiero actualizar algo en un html (.innerHTML o .value)
+          document.getElementById('nombreActualizar').value = oradorBuscado.nombre;
+          document.getElementById('apellidoActualizar').value = oradorBuscado.apellido;
+          document.getElementById('temaActualizar').value = oradorBuscado.tema;
+          document.getElementById('emailActualizar').value = oradorBuscado.email;
+          document.getElementById('comentActualizar').value = oradorBuscado.coment;
+
+          //guardo el id/orador del orador que se quiere actualizar
+          saveOradoresInFromLocal('oradorBuscado', oradorBuscado);
+        }
+        
+        function procesarListado(data) {
+         
+         saveOradoresInFromLocal('oradores', data);
+          const listarOradores = data;
+            let rows = '';
+              for(let orador of listarOradores) {
+                console.log(orador);
+                rows += `
+              <tr>
+                <th scope="row">${orador.id}</th>
+                <td>${orador.nombre}</td>
+                <td>${orador.apellido}</td>
+                <td>${orador.tema}</td>
+                <td>${orador.email}</td>
+                <td>${orador.coment}</td>
+                <td>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="editar(${orador.id})">
+                            Editar
+                        </button>
+                        <button type="button" class="btn btn-danger" onclick="eliminarOrador(${orador.id})">
+                            Eliminar
+                        </button>
+                </td>
+              </tr>
+            `
+          }
+          document.getElementById('usersRows').innerHTML = rows;
+      }
+
+        function dibujarError(error) {
+          console.log(error);
+          const alerta = `<div class="alert alert-danger" role="alert">
+            ${error.toString()}
+        </div>`;
+          document.getElementById('msj').innerHTML = alerta;
+      }
+
+        document.getElementById('btnGetUsers').addEventListener('click',listarOradores);
+
+    </script>
+
+        <!--eliminar-->
+    <script>
+        eliminarOrador = (id) => {
+          Swal.fire({
+              title: "Estas seguro?",
+              text: "¡No podrás revertir esto!",
+              icon: "question",
+              showCancelButton: true,
+              confirmButtonColor: "#3085d6",
+              cancelButtonColor: "#d33",
+              confirmButtonText: "Si, Borrar!"
+              }).then((result) => {
+                if (result.isConfirmed) {
+              
+                  fetch(`http://localhost:8080/web-app-23544/api/orador?id=${id}`, {
+                  method: "DELETE",
+          })
+          .then(response => response) 
+          .then(json => {
+            Swal.fire ({
+                      title: `<b class="rojo">¡Borrado Existoso!</b>`,
+                      html: `Orador Eliminado:<b class="rojo">${id}</b>`,
+                      icon: `success`,
+                      });
+             // alert(`se ha eliminado el orador id: ${id}`);
+              listarOradores();
+          })
+          .catch(err => console.log(err));
+            } 
+          });
+          //  if(!confirm('SEGURO?')) {
+          return;
+           
+
+          //fetch(`http://localhost:8080/web-app-23544/api/orador?id=${id}`, {
+            //  method: "DELETE",
+          //})
+          //.then(response => response) 
+          //.then(json => {
+           // Swal.fire ({
+             //         title: `<b class="rojo">¡Borrado Existoso!</b>`,
+               //       html: `Orador Eliminado:<b class="rojo">${id}</b>`,
+                 //     icon: `error`,
+                   //   });
+             // alert(`se ha eliminado el orador id: ${id}`);
+             // listarOradores();
+         // })
+          //.catch(err => console.log(err));
+      }
+    </script>
+
+        <!--actualizar-->
+    <script>
+      
+          const actualizarOrador = () => {
+          const oradorSeleccionado = getOradorSeleccionado();
+          if(!oradorSeleccionado) {
+              return
+          }
+            //obtengo los datos del formulario que esta en el modal
+            const nombre = document.getElementById('nombreActualizar').value;
+            const apellido = document.getElementById('apellidoActualizar').value;
+            const tema = document.getElementById('temaActualizar').value;
+            const email = document.getElementById('emailActualizar').value;
+            const coment = document.getElementById('comentActualizar').value;
+                    
+          const orador = {
+               nombre,
+               apellido,
+               tema,
+               email,
+               coment,
+          };
+
+          //ahora puedo enviar al backend para actualizar
+          //debo enviar estos datos al sevidor: https://www.freecodecamp.org/espanol/news/tutorial-de-fetch-api-en-javascript-con-ejemplos-de-js-fetch-post-y-header/
+          fetch(`http://localhost:8080/web-app-23544/api/orador?id=${oradorSeleccionado.id}`, {
+              method: "PUT",
+              body: JSON.stringify(orador),
+          })
+          .then(response => response) //status code 200
+          .then(json => {
+                  Swal.fire ({
+                      title: `<b class="azul">¡Actualización Existosa!</b>`,
+                      html: `Orador:<b class="azul">${oradorSeleccionado.id}</b>`,
+                      icon: "success",
+                      timer: 3000,
+                      timerProgressBar: true,
+                    });
+              //alert(`Se ha modificado el orador id:${oradorSeleccionado.id}`);
+              //cargar la lista 
+              listarOradores();
+              removeOradorSeleccionado();
+              cerrarModal();
+          })
+          .catch(err => console.log(err));
+      }
+      const cerrarModal = () => {
+          document.getElementById('btnCerrarModal').click();
+      }
+    </script>
+
+
+
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+          <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
+
+
